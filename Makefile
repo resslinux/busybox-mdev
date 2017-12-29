@@ -12,6 +12,6 @@ install:
 	install -d $(DESTDIR)$(INITD)
 	install -m 0755 init.d/* $(DESTDIR)$(INITD)
 	
-	install -m 0644 mdev.conf $(SYSCONFDIR)
+	install -m 0644 mdev.conf $(DESTDIR)$(SYSCONFDIR)
 
 .PHONY: install
